@@ -1,0 +1,878 @@
+{
+	"info": {
+		"_postman_id": "dbc6b3d3-f4aa-4d6b-b035-6fe609b16c19",
+		"name": "Kutumb Aspiration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Signup User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"user`\",\n    \"middlename\": \"user\",\n    \"lastname\":\"user\",\n    \"phoneno\":1234567890,\n    \"email\":\"artistsd@gmail.com\",\n    \"password\":\"test@1234\",\n    \"skills\": \"Backend\",\n    \"role\":0\n}"
+				},
+				"url": {
+					"raw": "localhost:4000/api/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signup Patron",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Kutumb\",\n    \"lastname\":\"Aspiration\",\n    \"phoneno\":999999998,\n    \"email\":\"kutumb1@gmail.com\",\n    \"password\":\"test@1234\",\n    \"role\":1\n}"
+				},
+				"url": {
+					"raw": "localhost:4000/api/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signin User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"gokulsuthar00@gmail.com\",\n    \"password\":\"123456789\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/api/signin",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signin Patron",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"ss@gmail.com\",\n    \"password\":\"test@1234\"\n}"
+				},
+				"url": {
+					"raw": "localhost:4000/api/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register Artist",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2UwMTcyNTEzYTRmMzQwYTYxOTM0ZDQiLCJpYXQiOjE2NzU2MzE1Nzd9.Ex7EumKAEvnpPL84qisWuQqPM0QwMk0j89jW4YA5obc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:4000/api/user/63e0172513a4f340a61934d4",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"user",
+						"63e0172513a4f340a61934d4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Artist",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2UxMjA5ZjUyMmU3ZGIyNDk3NDliMjUiLCJpYXQiOjE2NzU3NzQ3MTJ9.9s8dksMm0qInEkNueJaobLAdlBxNgcUjcg_2-weULm0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "fname",
+							"value": "Saurav",
+							"type": "text"
+						},
+						{
+							"key": "lname",
+							"value": "Muke",
+							"type": "text"
+						},
+						{
+							"key": "pno",
+							"value": "9090990909",
+							"type": "text"
+						},
+						{
+							"key": "emailid",
+							"value": "alokk@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "20",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "Male",
+							"type": "text"
+						},
+						{
+							"key": "caste",
+							"value": "abc",
+							"type": "text"
+						},
+						{
+							"key": "religion",
+							"value": "xyz",
+							"type": "text"
+						},
+						{
+							"key": "height",
+							"value": "98",
+							"type": "text"
+						},
+						{
+							"key": "language",
+							"value": "English",
+							"type": "text"
+						},
+						{
+							"key": "experince",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"type": "file",
+							"src": "_NwFe5sj9/1000_F_528849604_hcwxTiWzZ0IXiVyBDp2UcWIjydshO4In.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/api/users/register/63e1209f522e7db249749b25",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"users",
+						"register",
+						"63e1209f522e7db249749b25"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register Patron",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2E1YzU1MTFjNTU4MDM2NTU2MDVjMDkiLCJpYXQiOjE2NzE4MTc2NDR9.WlSqE_J2cVhh3P-u0EiWOTxaRiMiu1U4Nj06yvmIHHg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name_of_company\":\"Kutumb Aspiration\",\n    \"pname\":\"Akash Gupta\",\n    \"gender\":\"Male\",\n    \"location\":\"Delhi\",\n    \"pno\":83939389389,\n    \"emailid\":\"kutumb@gmail.com\",\n    \"category\":\"Dance\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Patron",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2UzMjg4MDc5ZjM1MDU1MmMyMjFlY2UiLCJpYXQiOjE2NzYwOTAxMDN9.JTYPKA77jP3o1AejuJLDE2FkcSHfaKNjXJrXpYu0oOE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"patron\": {\n        \"name_of_company\":\"ABC\"\n   }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/api/patron/update/63e3288079f350552c221ece",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"patron",
+						"update",
+						"63e3288079f350552c221ece"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Info By Email",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/user/info/saurav@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"user",
+						"info",
+						"saurav@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Patron Info By Id ",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2E1YzU1MTFjNTU4MDM2NTU2MDVjMDkiLCJpYXQiOjE2NzE4MTc2NDR9.WlSqE_J2cVhh3P-u0EiWOTxaRiMiu1U4Nj06yvmIHHg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:4000/api/patron/63a5c5511c55803655605c09",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"patron",
+						"63a5c5511c55803655605c09"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Patron By Filter",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"age\":20\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/api/patron/filters/users",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"patron",
+						"filters",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Opportunity",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U5MWFhMTQ2MmY1NjM3YTlhNTMxZjAiLCJpYXQiOjE2NzYyMjExMDF9.DYj7lFpZSqvWGVRhJsYFUSMZWtmWmgYG9TbCi6iH0D4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"posted_by_email\":\"user@gmail.com\",\n    \"position\":\"position\",\n    \"about\":\"about position\",\n    \"requirements\":\"req\",\n    \"duration\":2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/api/patron/create/opportunity/63e91aa1462f5637a9a531f0",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"patron",
+						"create",
+						"opportunity",
+						"63e91aa1462f5637a9a531f0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Opportunities By Email",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/patron/opportunity/all/useruser@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"patron",
+						"opportunity",
+						"all",
+						"useruser@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch All Opportunities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/getAllOpportunities",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"getAllOpportunities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch All Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/getAllUsers",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"getAllUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User By Email",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"daniksehra@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/api/getUserByEmail",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"getUserByEmail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reset Password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"otp\": 6645,\r\n    \"email\": \"gokulsuthar00@gmail.com\",\r\n    \"newPassword\": \"1234567890\",\r\n    \"confirmNewPassword\": \"1234567890\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/api/user/resetpassword",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"user",
+						"resetpassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Forgot Password",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U5MWFhMTQ2MmY1NjM3YTlhNTMxZjAiLCJpYXQiOjE2NzY1NDM5NTN9.rwSizabGiV15QQSHv5rIxdXIrng9P0ZdcgggIUuMBME",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"gokulsuthar00@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/api/user/forgotpassword",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"user",
+						"forgotpassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Apply for Opportunity",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"emailid\": \"artist@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/api/user/apply/opportunity/63e91b1d462f5637a9a531f5",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"user",
+						"apply",
+						"opportunity",
+						"63e91b1d462f5637a9a531f5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove Opportunity Application",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"emailid\": \"artist@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/api/user/apply/opportunity/63e91b1d462f5637a9a531f5",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"user",
+						"apply",
+						"opportunity",
+						"63e91b1d462f5637a9a531f5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Shortlist Artist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/user/shortlist/opportunity/63e91b1d462f5637a9a531f5/artist@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"user",
+						"shortlist",
+						"opportunity",
+						"63e91b1d462f5637a9a531f5",
+						"artist@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hirelist Artist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/user/hire/opportunity/63e91b1d462f5637a9a531f5/artist@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"user",
+						"hire",
+						"opportunity",
+						"63e91b1d462f5637a9a531f5",
+						"artist@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reject Artist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/user/reject/opportunity/63e91b1d462f5637a9a531f5/artist@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"user",
+						"reject",
+						"opportunity",
+						"63e91b1d462f5637a9a531f5",
+						"artist@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/signout",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"signout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post a Query",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"User\",\r\n    \"contactNumber\": 1234567890,\r\n    \"emailId\": \"user@gmail.com\",\r\n    \"location\": \"india\",\r\n    \"query\": \"user user  user user user user user user user user\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/api/user/query",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"user",
+						"query"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Queries",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2U5MWFhMTQ2MmY1NjM3YTlhNTMxZjAiLCJpYXQiOjE2NzY1NDM2MzN9.DDQQ2ihzApPjsHDVlV_TEucheiUOv0XB7UKit3qHxjs",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4000/api/users/allQueries",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"users",
+						"allQueries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find opportunities by filter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/user/getOpportunities?location=Banglore",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"user",
+						"getOpportunities"
+					],
+					"query": [
+						{
+							"key": "language",
+							"value": "Hindi",
+							"disabled": true
+						},
+						{
+							"key": "art",
+							"value": "Music",
+							"disabled": true
+						},
+						{
+							"key": "mode",
+							"value": "Hybrid",
+							"disabled": true
+						},
+						{
+							"key": "age",
+							"value": "30",
+							"disabled": true
+						},
+						{
+							"key": "location",
+							"value": "Banglore"
+						},
+						{
+							"key": "position",
+							"value": "Dance",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Opp By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/user/getOpportunity/63e93830dceda36b1e8eb0b5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"user",
+						"getOpportunity",
+						"63e93830dceda36b1e8eb0b5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Opp By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/user/getOpportunity/63e93830dceda36b1e8eb0b5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"user",
+						"getOpportunity",
+						"63e93830dceda36b1e8eb0b5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

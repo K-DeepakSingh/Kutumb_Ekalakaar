@@ -1,0 +1,3138 @@
+/* start menu bar styles */
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-color: white;
+}
+
+.menu-bar-options {
+    font-size: 18px;
+}
+
+a.menu-bar-options {
+    text-decoration: none;
+    color: black;
+}
+
+/* end menu bar styles */
+
+
+/* start rate patron styles */
+.rate-patron {
+    margin-top: 10rem;
+}
+
+.rate-patron-header1 {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 48px;
+}
+
+.rate-patron-header2 {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 48px;
+    margin-bottom: 68px;
+}
+
+.rate-patron-body-patron-rating-text {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+}
+
+.rate-patron-body-patron-feedback-text {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+}
+
+.star-cb-group {
+    /* remove inline-block whitespace */
+    font-size: 0;
+    /* flip the order so we can use the + and ~ combinators */
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    /* the hidden clearer */
+    font-weight: bold;
+    font-size: 38px;
+    margin-left: -92px;
+}
+
+.star-cb-group * {
+    font-size: 1rem;
+}
+
+.star-cb-group>input {
+    display: none;
+}
+
+.star-cb-group>input+label {
+    /* only enough room for the star */
+    display: inline-block;
+    overflow: hidden;
+    text-indent: 9999px;
+    width: 1em;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.star-cb-group>input+label:before {
+    display: inline-block;
+    text-indent: -9999px;
+    content: "☆";
+    color: #888;
+}
+
+.star-cb-group>input:checked~label:before,
+.star-cb-group>input+label:hover~label:before,
+.star-cb-group>input+label:hover:before {
+    content: "★";
+    color: #e52;
+    text-shadow: 0 0 1px #333;
+}
+
+.star-cb-group>.star-cb-clear+label {
+    text-indent: -9999px;
+    width: .5em;
+    margin-left: -.5em;
+}
+
+.star-cb-group>.star-cb-clear+label:before {
+    width: .5em;
+}
+
+.star-cb-group:hover>input+label:before {
+    content: "☆";
+    color: #888;
+    text-shadow: none;
+}
+
+.star-cb-group:hover>input+label:hover~label:before,
+.star-cb-group:hover>input+label:hover:before {
+    content: "★";
+    color: #e52;
+    text-shadow: 0 0 1px #333;
+}
+
+#hired-artist-rating-number {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 135px;
+    margin-top: -9px;
+}
+
+.rate-patron-body-patron-rating-number {
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 1400px) {
+    #hired-artist-rating-number {
+        margin-left: 106px;
+    }
+
+}
+
+@media only screen and (max-width: 1202px) {
+    .star-cb-group {
+        margin-left: -55px;
+    }
+
+    #hired-artist-rating-number {
+        margin-left: 111px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .star-cb-group {
+        margin-left: -8px;
+    }
+
+    #hired-artist-rating-number {
+        margin-left: 119px;
+    }
+
+}
+
+@media only screen and (max-width: 769px) {
+    .star-cb-group {
+        margin-left: 12px;
+    }
+
+    #hired-artist-rating-number {
+        margin-left: 109px;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+
+    .rate-patron-header1 {
+        font-size: 26px;
+    }
+
+    .rate-patron-header2 {
+        font-size: 26px;
+    }
+
+    .rate-patron-body-patron-rating-text {
+        font-size: 25px;
+    }
+
+    .rate-patron-body-patron-feedback-text {
+        font-size: 25px;
+    }
+
+    #hired-artist-rating-number {
+        margin-left: 20px;
+    }
+}
+
+/* end rate patron styles */
+
+
+/* start patron registration styles */
+.patron-registration {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+.header {
+    box-shadow: 2px 3px 9px 0px;
+    border-radius: 11px;
+    height: 86px;
+}
+
+.register-text {
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.tab {
+    display: none;
+}
+
+.notvalid {
+    background-color: #ffdddd;
+}
+
+input.invalid {
+    background-color: #ffdddd;
+}
+
+select.invalid {
+    background-color: #ffdddd;
+}
+
+#patron-registration-page-form {
+    box-shadow: 0px 0px 1px 0px;
+}
+
+/* .patron-registration-page-form-basic-details {
+    box-shadow: 0px 0px 1px 0px;
+} */
+
+.patron-registration-page-form-basic-details-header {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.patron-registration-buttons {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 33px;
+    margin-left: 166px;
+}
+
+@media only screen and (max-width: 992px) {
+    .about-img {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .about-img {
+        margin-bottom: 82px;
+    }
+
+}
+
+@media only screen and (max-width: 333px) {
+    .register-text {
+        font-size: 29px;
+    }
+
+}
+
+
+@media only screen and (max-width: 766px) {
+    .patron-registration-buttons {
+        margin-left: 268px;
+    }
+
+}
+
+@media only screen and (max-width: 561px) {
+    .patron-registration-buttons {
+        margin-left: 230px;
+    }
+
+}
+
+@media only screen and (max-width: 518px) {
+    .patron-registration-buttons {
+        margin-left: 194px;
+    }
+
+}
+
+@media only screen and (max-width: 482px) {
+    .patron-registration-buttons {
+        margin-left: 157px;
+    }
+
+}
+
+@media only screen and (max-width: 445px) {
+    .patron-registration-buttons {
+        margin-left: 116px;
+    }
+
+}
+
+@media only screen and (max-width: 405px) {
+    .patron-registration-buttons {
+        margin-left: 90px;
+    }
+
+}
+
+@media only screen and (max-width: 380px) {
+    .patron-registration-buttons {
+        margin-left: 36px;
+    }
+
+}
+
+/* end patron registration styles */
+
+
+/* start patron dashboard styles */
+.patron-dashboard-header-parent {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.patron-dashboard-header-background-img {
+    width: 100%;
+    height: 191px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.patron-dashboard-header-patron-img {
+    border-radius: 50%;
+    width: 11rem;
+    height: 11rem;
+    position: absolute;
+    top: 102px;
+    left: 30px;
+}
+
+.patron-dashboard-header-patron-name-category {
+    margin-left: 35px;
+}
+
+.patron-dashboard-header-patron-name {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 42px;
+    margin-top: 95px;
+
+}
+
+.patron-dashboard-header-patron-category {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 36px;
+}
+
+.patron-dashboard-header-company-name {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 34px;
+    margin-top: 25px;
+}
+
+.patron-dashboard-header-company-verified-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.patron-dashboard-body {
+    margin-top: 55px;
+    margin-bottom: 35px;
+}
+
+.patron-dashboard-body-components-width {
+    width: 920px;
+}
+
+.patron-dashboard-patron-account-info {
+    /* width: 920px; */
+}
+
+.patron-dashboard-body-all-card-header-text {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 34px;
+}
+
+.patron-dashboard-patron-account-info-input-lable {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-size: 17px;
+}
+
+.patron-dashboard-patron-account-info-edit-profile {
+    margin-top: 48px;
+    margin-bottom: 68px;
+
+}
+
+@media only screen and (max-width: 363px) {
+    .patron-dashboard-patron-account-info-edit-profile {
+        margin-top: 48px;
+    }
+}
+
+@media (min-width: 331px) {
+
+    .patron-dashboard-patron-account-info-edit-profile {
+        width: 100%;
+    }
+}
+
+.patron-dashboard-patron-relevant-kalakaars {}
+
+.patron-dashboard-patron-relevant-kalakaars-img {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+}
+
+.patron-dashboard-patron-relevant-kalakaars-name {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+
+.patron-dashboard-patron-relevant-kalakaars-view-details {
+    margin-right: 10px;
+}
+
+.patron-dashboard-patron-relevant-kalakaars-message {
+    width: 28px;
+    height: 28px;
+}
+
+.patron-dashboard-patron-relevant-kalakaars-view-more {
+    margin-top: 52px;
+    cursor: pointer;
+    font-family: 'Inria Sans';
+    font-style: normal;
+}
+
+.patron-dashboard-patron-relevant-kalakaars-view-more a {
+    color: #ed0404;
+    text-decoration: none;
+}
+
+.patron-dashboard-opportunities-status {
+    /* width: 920px; */
+}
+
+.patron-dashboard-opportunities-status-card {
+    border-radius: 13px;
+    border: none;
+    box-shadow: 0px 0px 3px;
+    /* width: 76%; */
+    /* margin-left: 10rem; */
+    height: 121px;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 992px) {
+
+    .patron-dashboard-opportunities-status-card {
+        /* width: 88%; */
+        /* margin-left: 3rem; */
+    }
+}
+
+@media (max-width: 767px) {
+
+    .patron-dashboard-opportunities-status-card {
+        /* width: 100%; */
+        /* margin-left: 0rem; */
+    }
+}
+
+.patron-dashboard-opportunities-status-body-header {
+    margin-bottom: 1px;
+}
+
+.patron-dashboard-opportunities-status-opportunity-name {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.patron-dashboard-opportunities-status-no-of-position {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.patron-dashboard-opportunities-status-body-footer {
+    /* margin-top: 10px; */
+}
+
+.patron-dashboard-opportunities-status-opportunity-details {
+    cursor: pointer;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 36px;
+}
+
+.patron-dashboard-opportunities-status-opportunity-details a {
+    color: #ed0404;
+    text-decoration: none;
+}
+
+.patron-dashboard-opportunities-status-view-more {
+    margin-top: 19px;
+    cursor: pointer;
+    font-family: 'Inria Sans';
+    font-style: normal;
+}
+
+.patron-dashboard-opportunities-status-view-more a {
+    color: #ed0404;
+    text-decoration: none;
+}
+
+.patron-dashboard-patron-upload-opportunities {
+    margin-top: 48px;
+
+}
+
+@media only screen and (max-width: 363px) {
+    .patron-dashboard-patron-upload-opportunities {
+        margin-top: 45px;
+    }
+}
+
+@media (min-width: 331px) {
+
+    .patron-dashboard-patron-upload-opportunities {
+        width: 100%;
+    }
+}
+
+.patron-dashboard-hired-candidates-card {
+    border-radius: 13px;
+    border: none;
+    box-shadow: 0px 0px 3px;
+    /* width: 76%; */
+    /* margin-left: 10rem; */
+    height: 146px;
+    margin-bottom: 2rem;
+}
+
+.patron-dashboard-hired-candidates-category {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.patron-dashboard-hired-candidates-salary-status {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.patron-dashboard-hired-candidates-status {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.patron-dashboard-hired-candidates-view-more {
+    margin-top: 19px;
+    cursor: pointer;
+    font-family: 'Inria Sans';
+    font-style: normal;
+}
+
+.patron-dashboard-hired-candidates-view-more a {
+    color: #ed0404;
+    text-decoration: none;
+}
+
+.patron-dashboard-hired-candidates-details {
+    cursor: pointer;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 36px;
+}
+
+.patron-dashboard-hired-candidates-details a {
+    color: #ed0404;
+    text-decoration: none;
+}
+
+@media (max-width: 1400px) {
+
+    /* .patron-dashboard-patron-account-info {
+        width: 746px;
+    }
+
+    .patron-dashboard-opportunities-status {
+        width: 746px;
+    } */
+    .patron-dashboard-body-components-width {
+        width: 746px;
+    }
+}
+
+@media (max-width: 1207px) {
+
+    /* .patron-dashboard-patron-account-info {
+        width: 572px;
+    }
+
+    .patron-dashboard-opportunities-status {
+        width: 572px;
+    } */
+    .patron-dashboard-body-components-width {
+        width: 572px;
+    }
+}
+
+@media (max-width: 990px) {
+
+    /* .patron-dashboard-patron-account-info {
+        width: 340px;
+    }
+
+    .patron-dashboard-opportunities-status {
+        width: 340px;
+    } */
+    .patron-dashboard-body-components-width {
+        width: 340px;
+    }
+}
+
+@media (max-width: 989px) {
+    .patron-dashboard-opportunities-status-opportunity-name {
+        font-size: 17px;
+    }
+
+    .patron-dashboard-opportunities-status-no-of-position {
+        font-size: 17px;
+    }
+
+    .patron-dashboard-opportunities-status-opportunity-details {
+        font-size: 16px;
+    }
+
+    .patron-dashboard-hired-candidates-category {
+        font-size: 17px;
+    }
+
+    .patron-dashboard-hired-candidates-salary-status {
+        font-size: 17px;
+    }
+
+    .patron-dashboard-hired-candidates-status {
+        font-size: 17px;
+    }
+}
+
+
+.space {
+    width: 100%;
+}
+
+@media (max-width: 773px) {
+
+    /* .patron-dashboard-patron-account-info {
+        width: 600px;
+    }
+
+    .patron-dashboard-opportunities-status {
+        width: 600px;
+    } */
+    .patron-dashboard-body-components-width {
+        width: 600px;
+    }
+
+    .patron-dashboard-patron-relevant-kalakaars {
+        margin-bottom: 27px;
+    }
+
+    .patron-dashboard-patron-upload-opportunities {
+        margin-bottom: 66px;
+    }
+
+    .patron-dashboard-hired-candidates {
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .patron-dashboard-header-patron-img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .patron-dashboard-header-patron-name {
+        font-size: 27px;
+        margin-top: 76px;
+    }
+
+    .patron-dashboard-header-patron-category {
+        font-size: 22px;
+    }
+
+    .patron-dashboard-header-company-name {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 556px) {
+    .patron-dashboard-header-company-name {
+        margin-top: 2px;
+    }
+}
+
+@media (max-width: 526px) {
+
+    .patron-dashboard-header-patron-img {
+        width: 8rem;
+        height: 8rem;
+        top: 119px;
+    }
+
+    .patron-dashboard-header-patron-name {
+        margin-top: 55px;
+        font-size: 25px;
+    }
+
+    .patron-dashboard-header-patron-category {
+        font-size: 20px;
+    }
+
+    .patron-dashboard-header-company-name {
+        font-size: 18px;
+    }
+
+    .patron-dashboard-header-company-verified-icon {
+        width: 21px;
+        height: 21px;
+    }
+
+    .patron-dashboard-header-company-name {
+        margin-top: 2px;
+    }
+}
+
+@media (max-width: 308px) {
+    .patron-dashboard-hired-candidates-card {
+        height: 182px;
+    }
+}
+
+@media (max-width: 211px) {
+    .patron-dashboard-opportunities-status-card {
+        height: 155px;
+    }
+}
+
+@media (max-width: 262px) {
+
+    .patron-dashboard-header-patron-img {
+        width: 6rem;
+        height: 6rem;
+        top: 136px;
+    }
+
+    .patron-dashboard-header-patron-name {
+        font-size: 23px;
+        margin-top: 38px;
+    }
+
+    .patron-dashboard-header-patron-category {
+        font-size: 18px;
+    }
+
+    .patron-dashboard-header-company-name {
+        font-size: 16px;
+    }
+
+    .patron-dashboard-header-company-verified-icon {
+        width: 19px;
+        height: 19px;
+    }
+
+    .patron-dashboard-header-company-name {
+        margin-top: 2px;
+    }
+}
+
+/* end patron dashboard styles */
+
+
+/* start edit patron profile styles */
+.patron-center {
+    margin: auto;
+    width: 66%;
+    /* border: 3px solid #73AD21; */
+    padding: 10px;
+
+}
+
+.edit-patron-profile-text {
+    font-family: 'Inria Sans';
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 35.97px;
+    font-style: normal;
+}
+
+.edit-patron-profile {
+    margin-top: 7rem;
+    /* width: 50%;
+    height: 50%; */
+}
+
+.space {
+    width: 49.333333%;
+}
+
+.patron-profile-photo-container {
+    margin-bottom: 10px;
+}
+
+.patron-profile-photo {
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+
+}
+
+.edit-patron-profile-input-lable {
+    font-family: 'Inria Sans';
+    font-style: normal;
+}
+
+.patron-change-profile-photo-text {
+    border: none;
+    background-color: inherit;
+    padding: 14px 2px;
+    font-size: 20px;
+    margin-left: 6px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+}
+
+.edit-patron-profile-save-changes {
+    margin-top: 60px;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .space {
+        width: 50.333333%;
+    }
+
+    .patron-center {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 472px) {
+
+
+    /* .edit-patron-profile-save-changes {
+        width: 47%;
+    } */
+
+}
+
+@media only screen and (max-width: 405px) {
+
+
+    .space {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 363px) {
+
+
+    .edit-patron-profile-save-changes {
+        margin-top: 60px;
+    }
+
+
+}
+
+@media (min-width: 331px) {
+
+    .edit-patron-profile-save-changes {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* .edit-patron-profile-save-changes {
+        justify-content: flex-end !important;
+    } */
+}
+
+/*end edit patron profile styles */
+
+/* start upload opportunities styles */
+.patron-upload-opportunity {
+    margin-top: 6rem;
+    margin-bottom: 19px;
+}
+
+.patron-upload-opportunity-heading {
+    font-weight: bold;
+    font-size: 26px;
+    margin-bottom: 20px;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    /* font-weight: 700;
+    font-size: 40px; */
+    line-height: 48px;
+}
+
+.patron-upload-opportunity-form-label {
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.patron-upload-opportunity-inputPosition {
+    width: 30%;
+}
+
+/* .patron-upload-opportunity-inputDuration {
+    width: 30%;
+} */
+.patron-upload-opportunity-inputDuration {
+    width: 62%;
+}
+
+.patron-upload-opportunity-inputDuration-text {
+    width: 62%;
+}
+
+.patron-upload-opportunity-inputNumber {
+    width: 30%;
+}
+
+.patron-upload-opportunity-upload-button {
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+    .patron-upload-opportunity {
+        width: 1140px;
+    }
+}
+
+@media (max-width: 766px) {
+    .patron-upload-opportunity-inputPosition {
+        width: 42%;
+    }
+
+    .patron-upload-opportunity-inputDuration {
+        width: 88%;
+    }
+
+    .patron-upload-opportunity-inputNumber {
+        width: 42%;
+    }
+
+    .patron-upload-opportunity-form-label-small-input-box {
+        width: 100%;
+    }
+
+}
+
+/* @media (max-width: 510px) {
+
+    .patron-upload-opportunity-form-label-small-input-box {
+        width: 50%;
+    }
+
+} */
+
+/* end upload opportunities styles */
+
+/* start uploaded opportunities styles */
+.patron-uploaded-opportunities {
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+}
+
+.patron-uploaded-opportunities-heading {
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 40px;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    /* font-weight: 700;
+font-size: 30px; */
+    line-height: 36px;
+}
+
+.patron-uploaded-opportunities-card {
+
+    border-radius: 13px;
+    border: none;
+    box-shadow: 0px 0px 3px 0px;
+    margin-bottom: 2rem;
+}
+
+.patron-uploaded-opportunities-opportunityName {
+    font-weight: bold;
+    font-size: 22px;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    /* font-weight: 700;
+font-size: 34px; */
+    line-height: 41px;
+}
+
+.patron-uploaded-opportunities-opportunityNumber {
+    font-size: 19px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+}
+
+.patron-uploaded-opportunities-opportunityDuration {
+    font-size: 19px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+}
+
+.patron-uploaded-opportunities-opportunityLocation {
+    font-size: 19px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+}
+
+.patron-uploaded-opportunities-opportunityEdit {
+    font-weight: 500;
+    font-family: 'Inria Sans';
+    font-style: normal;
+}
+
+.patron-uploaded-opportunities-opportunityEdit a {
+    color: #ed0404;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Inria Sans';
+    font-style: normal;
+}
+
+@media (max-width: 485px) {
+    .patron-uploaded-opportunities {
+        margin-top: 8rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .patron-uploaded-opportunities-body {
+        width: 70%;
+    }
+}
+
+/* end uploaded opportunities styles */
+
+/* start edit opportunity styles */
+
+.patron-upload-opportunity-edit-button {
+    margin-top: 10px;
+}
+
+/* end edit opportunities styles */
+
+/* start edit opportunity styles */
+
+
+/* start patron search artist styles */
+.patron-search-artist {
+    margin-top: 5rem;
+}
+
+.patron-search-artist-header {
+    margin-bottom: 34px;
+    margin-right: 93px;
+}
+
+.filter {
+    border: 1px solid black;
+    width: 15%;
+    background-color: white;
+    cursor: pointer;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 41px;
+}
+
+.filter img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+.search-data-text {
+    /* margin-left: 6rem; */
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 36px;
+}
+
+.search-data-text-category {
+    font-size: 27px;
+}
+
+/* body {
+    background: #f3f3f3;
+} */
+
+.artist-card {
+    border-radius: 13px;
+    border: none;
+    box-shadow: 0px 0px 3px;
+    width: 76%;
+    margin-left: 10rem;
+    margin-bottom: 2rem;
+}
+
+.patron-search-artist-body-header {
+    margin-bottom: 1px;
+}
+
+.artist-name {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 41px;
+}
+
+.artist-category {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.artist-location {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 36px;
+}
+
+.patron-search-artist-body-footer {
+    margin-top: 10px;
+}
+
+.artist-details {
+    cursor: pointer;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.artist-details a {
+    color: #ed0404;
+    text-decoration: none;
+}
+
+@media (max-width: 484px) {
+
+    .patron-search-artist {
+        margin-top: 8rem;
+    }
+}
+
+@media (max-width: 1192px) {
+
+    .patron-search-artist-header {
+        /* margin-bottom: 34px; */
+        /* margin-right: 0px;
+        margin-left: 13rem; */
+    }
+}
+
+@media (max-width: 1106px) {
+
+    .patron-search-artist-header {
+        /* margin-bottom: 34px; */
+        /* margin-right: 0px;
+        margin-left: 11rem; */
+    }
+}
+
+@media (max-width: 1031px) {
+
+    .patron-search-artist-header {
+        /* margin-bottom: 34px; */
+        /* margin-right: 0px;
+        margin-left: 8rem; */
+    }
+}
+
+@media (max-width: 892px) {
+
+    .patron-search-artist-header {
+        /* margin-bottom: 34px; */
+        /* margin-right: 0px;
+        margin-left: 5rem; */
+    }
+}
+
+@media (max-width: 792px) {
+
+    .patron-search-artist-header {
+        /* margin-bottom: 34px; */
+        /* margin-right: 0px;
+        margin-left: 2rem; */
+    }
+}
+
+@media (max-width: 602px) {
+
+    .patron-search-artist-header {
+        /* margin-bottom: 34px; */
+        /* margin-right: 0px;
+        margin-left: 0rem; */
+    }
+}
+
+@media (max-width: 605px) {
+
+    /* .search-data-text {
+        margin-left: 1rem;
+    } */
+}
+
+@media (max-width: 450px) {
+
+    .search-data-text {
+        font-size: 22px;
+    }
+
+    .search-data-text-category {
+        font-size: 22px;
+    }
+
+    .artist-name {
+        font-size: 22px;
+    }
+
+    .artist-details {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 390px) {
+
+    .search-data-text {
+        font-size: 20px;
+    }
+
+    .search-data-text-category {
+        font-size: 19px;
+    }
+
+    .artist-name {
+        font-size: 20px;
+    }
+
+    .artist-category {
+        font-size: 19px;
+    }
+
+    .artist-details {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 325px) {
+
+    /* .search-data-text-category {
+        margin-left: 8rem;
+    } */
+}
+
+@media (max-width: 286px) {
+    .search-data-text {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .artist-card {
+        width: 88%;
+        margin-left: 3rem;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .artist-card {
+        width: 100%;
+        margin-left: 0rem;
+    }
+}
+
+.filter-popup {
+    --bs-modal-width: 711px;
+}
+
+.filter-popup-dialog {}
+
+.filter-popup-header-text {
+    font-size: 17px;
+}
+
+.filter-text {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.clear-text {
+    margin-left: 30rem;
+    flex: 2 0 auto;
+    cursor: pointer;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.patron-view-artist-filter-InputHeader {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 38px;
+}
+
+.see-more-text {
+    border: none;
+    color: #d9534f;
+}
+
+@media (max-width: 708px) {
+
+    .clear-text {
+        margin-left: 27rem;
+    }
+}
+
+@media (max-width: 645px) {
+
+    .clear-text {
+        margin-left: 24rem;
+    }
+}
+
+@media (max-width: 616px) {
+
+    .clear-text {
+        margin-left: 22rem;
+    }
+}
+
+@media (max-width: 580px) {
+
+    .clear-text {
+        margin-left: 20rem;
+    }
+}
+
+@media (max-width: 531px) {
+
+    .clear-text {
+        margin-left: 16rem;
+    }
+}
+
+@media (max-width: 505px) {
+
+    .clear-text {
+        margin-left: 12rem;
+    }
+}
+
+@media (max-width: 435px) {
+
+    .clear-text {
+        margin-left: 10rem;
+    }
+}
+
+@media (max-width: 408px) {
+
+    .clear-text {
+        margin-left: 8rem;
+    }
+}
+
+@media (max-width: 371px) {
+
+    .clear-text {
+        margin-left: 6rem;
+    }
+}
+
+@media (max-width: 345px) {
+
+    .clear-text {
+        margin-left: 5rem;
+    }
+}
+
+@media (max-width: 325px) {
+
+    .clear-text {
+        margin-left: 3rem;
+    }
+}
+
+@media (max-width: 325px) {
+
+    .clear-text {
+        margin-left: 1rem;
+    }
+}
+
+/* .patron-view-artist-filter-space-betweeninput-lable-inputbox {
+    width: 26%;
+} */
+.patron-view-artist-filter-inputLabelSelect {
+    /* width: ; */
+}
+
+@media (max-width: 405px) {
+
+    .patron-view-artist-filter-inputbox {
+        width: 77%;
+    }
+}
+
+@media (max-width: 554px) {
+
+    .see-more-text {
+        width: 50%;
+    }
+
+}
+
+/* end patron search artist styles */
+
+
+/* start patron view artist styles */
+.view-artist {
+    margin-top: 7rem;
+    margin-left: 6px;
+    margin-bottom: 2rem;
+
+}
+
+.view-artist-header {
+    margin-bottom: 17px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.view-artist-top-text {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 44px;
+}
+
+.view-artist-bottom-text {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    /* line-height: 44px; */
+}
+
+p span {
+    display: block;
+}
+
+.artist-card {
+    /* border-radius: 9px;
+    border: none;
+    box-shadow: 0px 1px 2px 0px;
+    width: 81%; */
+    /* margin-left: 7rem; */
+}
+
+.artist-name {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.view-artist-image {
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+
+}
+
+
+.artist-category {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+}
+
+.artist-details-card {
+    border-radius: 6px;
+    /* border: none; */
+    /* box-shadow: 0px 0px 2px 0px; */
+    width: 98%;
+    margin-left: 9px;
+    margin-bottom: 25px;
+}
+
+.card-body-content {
+    margin-bottom: 5rem;
+}
+
+.view-artist-body-header {
+    margin-bottom: 10px;
+}
+
+.view-artist-body-header-left-button {
+    cursor: pointer;
+}
+
+.view-artist-info-title {
+    font-weight: bold;
+    font-size: 19px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+}
+
+.view-artist-info-body {
+    margin-left: 6px;
+    margin-bottom: 6px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+}
+
+.hire-button {
+    margin: 0;
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1113px) {
+
+    .artist-details-card {
+        margin-left: 7px;
+    }
+}
+
+@media (max-width: 913px) {
+
+    .artist-details-card {
+        margin-left: 6px;
+    }
+}
+
+@media (max-width: 725px) {
+
+    .artist-details-card {
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 613px) {
+
+    .artist-details-card {
+        margin-left: 4px;
+    }
+}
+
+@media (max-width: 491px) {
+
+    .artist-details-card {
+        margin-left: 3px;
+    }
+}
+
+@media (max-width: 385px) {
+
+    .artist-details-card {
+        margin-left: 2px;
+    }
+}
+
+@media (max-width: 242px) {
+
+    .artist-details-card {
+        margin-left: 1px;
+    }
+}
+
+/* end patron view artist styles */
+
+
+/* Start patron view applications styles */
+.patron-view-applications {
+    margin-top: 5rem;
+}
+
+.patron-view-applications-header {
+    margin-bottom: 23px;
+    margin-right: 1px;
+}
+
+/* 
+.filter {
+    border: 1px solid black;
+    width: 15%;
+    background-color: white;
+    cursor: pointer;
+} */
+
+.filter img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+.patron-view-applications-search-data-text {
+    /* margin-left: 6rem; */
+    font-size: 24px;
+    /* margin-left: 6rem; */
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 600;
+    /* font-size: 19px;
+line-height: 36px; */
+}
+
+/* body {
+    background: #f3f3f3;
+} */
+.patron-view-applications-opportunity-text {
+    font-size: 24px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 600;
+}
+
+.patron-view-applications-artist-card {
+    border-radius: 13px;
+    border: none;
+    box-shadow: 0px 0px 3px;
+    width: 76%;
+    margin-left: 10rem;
+    margin-bottom: 2rem;
+}
+
+.patron-view-applications-body-header {
+    margin-bottom: 1px;
+}
+
+/* .artist-name {
+    font-size: 17px;
+    font-weight: bold;
+} */
+
+/* .artist-category {
+    font-size: 16px;
+} */
+
+.patron-view-applications-body-footer {
+    margin-top: 10px;
+}
+
+/* .artist-details {
+    cursor: pointer;
+    font-weight: 500;
+} */
+
+/* .artist-details a {
+    color: #ed0404;
+    text-decoration: none;
+} */
+
+@media (max-width: 484px) {
+
+    .patron-view-applications {
+        margin-top: 8rem;
+    }
+}
+
+@media (max-width: 1192px) {
+
+    .patron-view-applications-header {
+        /* margin-bottom: 34px; */
+        /* margin-right: 0px;
+        margin-left: 6rem; */
+    }
+
+
+}
+
+@media (max-width: 1106px) {
+
+    .patron-view-applications-header {
+        /* margin-bottom: 34px; */
+        /* margin-right: 0px;
+        margin-left: 4rem; */
+    }
+
+}
+
+@media (max-width: 1031px) {
+
+    .patron-view-applications-header {
+        /* margin-bottom: 34px; */
+        /* margin-right: 0px;
+        margin-left: 1rem; */
+    }
+}
+
+@media (max-width: 892px) {
+
+    .patron-view-applications-header {
+        /* margin-bottom: 34px; */
+        /* margin-right: 0px;
+        margin-left: 5rem; */
+    }
+}
+
+@media (max-width: 792px) {
+
+    .patron-view-applications-header {
+        /* margin-bottom: 34px; */
+        /* margin-right: 0px;
+        margin-left: 2rem; */
+    }
+}
+
+@media (max-width: 602px) {
+
+    .patron-view-applications-header {
+        /* margin-bottom: 34px; */
+        margin-right: 0px;
+        margin-left: 0rem;
+    }
+}
+
+@media (max-width: 605px) {
+
+    /* .patron-view-applications-search-data-text {
+        margin-left: 1rem;
+    } */
+}
+
+@media (max-width: 325px) {
+
+    .patron-view-applications-search-data-text-category {
+        margin-left: 8rem;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .patron-view-applications-artist-card {
+        width: 88%;
+        margin-left: 3rem;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .patron-view-applications-artist-card {
+        width: 100%;
+        margin-left: 0rem;
+    }
+}
+
+.opportunity-name {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-left: 59px;
+}
+
+@media (max-width: 988px) {
+
+
+    .opportunity-name {
+        margin-left: 0px;
+    }
+}
+
+.patron-view-applications-filter-InputHeader {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 38px;
+}
+
+@media (max-width: 405px) {
+
+    .patron-view-applications-filter-inputbox {
+        width: 77%;
+    }
+}
+
+/* end patron view applications styles */
+
+
+/* Strat view applications resume styles */
+.patron-view-application {
+    margin-top: 5rem;
+}
+
+.patron-view-application-heading {
+    font-weight: bold;
+    font-size: 33px;
+    margin-bottom: 20px;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    /* font-weight: 700;
+    font-size: 40px; */
+    line-height: 48px;
+}
+
+.patron-view-application-body-container {
+    height: 900px;
+    border: 1px solid;
+}
+
+.horizontal-design {
+    /* width: 1318px; */
+    height: 160px;
+    background-color: #F9E5F5;
+    margin-left: -12px;
+    margin-top: 42px;
+    position: absolute;
+}
+
+/* @media (max-width: 1440px) {
+
+
+    .horizontal-design {
+        width: 71rem;
+    }
+} */
+
+/* @media (max-width: 1220px) {
+
+
+    .horizontal-design {
+        width: 60rem;
+    }
+} */
+
+/* @media (max-width: 992px) {
+
+
+    .horizontal-design {
+        width: 718px;
+    }
+}
+
+@media (max-width: 768px) {
+
+
+    .horizontal-design {
+        width: 538px;
+    }
+} */
+
+/* @media (max-width: 572px) {
+
+
+    .horizontal-design {
+        width: 538px;
+    }
+} */
+
+/* @media (max-width: 556px) {
+
+
+    .horizontal-design {
+        width: inherit;
+    }
+} */
+
+
+
+
+/* @media (max-width: 568px) {
+
+
+    .horizontal-design {
+        width: 541px;
+    }
+}
+
+@media (max-width: 560px) {
+
+
+    .horizontal-design {
+        width: 527px;
+    }
+} */
+
+/* @media (max-width: 546px) {
+
+
+    .horizontal-design {
+        width: 518px;
+    }
+} */
+
+.vertical-design {
+    margin-left: 20px;
+    width: 226px;
+    height: 900px;
+    background-color: #98AFB4;
+    z-index: 10;
+    position: absolute;
+}
+
+.patron-view-application-artist-image {
+    margin-left: 12px;
+    margin-top: 23px;
+    border-radius: 50%;
+    width: 201px;
+    height: 201px;
+}
+
+.patron-view-application-artist-name-profession {
+    margin-left: 280px;
+    margin-top: 41px;
+}
+
+.patron-view-application-artist-name {
+    font-family: 'Hubballi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 48px;
+}
+
+.patron-view-application-artist-profession {
+    font-family: 'Hubballi';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.patron-view-application-artist-details {
+    margin-top: 14rem;
+    margin-left: 261px;
+}
+
+.patron-view-application-artist-details-arrow {
+    width: 17px;
+    height: 17px;
+    margin-left: 13px;
+    margin-top: -4px;
+}
+
+.patron-view-application-artist-details-head {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 38px;
+}
+
+.patron-view-application-artist-details-body {
+    margin-left: 38px;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 36px;
+}
+
+.patron-view-application-footer-container {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.patron-view-application-footer-container-hire-question {
+    font-weight: 450;
+    font-size: 27px;
+}
+
+.patron-view-application-footer-container-hire-ans {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.patron-view-application-footer-container-contact-artist {
+    float: right;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.patron-view-application-footer-container-contact-artist a {
+    color: #ed0404;
+    text-decoration: none;
+
+}
+
+.patron-view-application-footer-container-contact-artist-previous-experience {
+    float: right;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.patron-view-application-footer-container-contact-artist-previous-experience a {
+    color: #ed0404;
+    text-decoration: none;
+
+}
+
+.patron-view-application-footer-container-arrowimg {
+    height: 16px;
+    width: 16px;
+}
+
+@media (max-width: 991px) {
+    .horizontal-design {
+        height: 128px;
+    }
+
+    .vertical-design {
+        width: 155px;
+    }
+
+    .patron-view-application-artist-image {
+        margin-left: 5.4px;
+        margin-top: 34px;
+        width: 145px;
+        height: 145px;
+    }
+
+    .patron-view-application-artist-name-profession {
+        margin-left: 193px;
+        margin-top: 23px;
+    }
+
+    .patron-view-application-artist-name {
+        font-size: 36px;
+    }
+
+    .patron-view-application-artist-profession {
+        font-size: 27px;
+    }
+
+    .patron-view-application-artist-details {
+        margin-left: 185px;
+        margin-top: 184px;
+    }
+
+    .patron-view-application-artist-details-head {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 500px) {
+
+
+    .horizontal-design {
+        height: 110px;
+    }
+
+    .vertical-design {
+        width: 130px;
+    }
+
+    .patron-view-application-artist-image {
+        margin-left: 6px;
+        margin-top: 37px;
+        width: 118px;
+        height: 118px;
+    }
+
+    .patron-view-application-artist-name-profession {
+        margin-left: 167px;
+        margin-top: 14px;
+    }
+
+    .patron-view-application-artist-name {
+        font-size: 32px;
+    }
+
+    .patron-view-application-artist-profession {
+        font-size: 22px;
+    }
+
+    .patron-view-application-artist-details {
+        margin-left: 150px;
+        margin-top: 10rem;
+    }
+
+    .patron-view-application-artist-details-head {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 408px) {
+
+    .patron-view-application-body-container {
+        height: 1064px;
+    }
+
+    /* .horizontal-design {
+        width: 311px;
+    } */
+
+    .vertical-design {
+        height: 1064px;
+    }
+
+    .patron-view-application-artist-name {
+        font-size: 32px;
+    }
+
+    .patron-view-application-artist-profession {
+        font-size: 22px;
+    }
+
+    .patron-view-application-artist-details {
+        margin-left: 150px;
+        margin-top: 10rem;
+    }
+
+    .patron-view-application-artist-details-body {
+        font-size: 18px;
+    }
+}
+
+
+
+@media (max-width: 358px) {
+
+    .patron-view-application-body-container {
+        height: 934px;
+    }
+
+    .horizontal-design {
+        margin-top: 6px;
+        height: 100px;
+    }
+
+    .vertical-design {
+        height: 932px;
+        margin-left: -6px;
+        width: 105px;
+    }
+
+    .patron-view-application-artist-image {
+        margin-left: 5px;
+        margin-top: 22px;
+        width: 94px;
+        height: 94px;
+    }
+
+    .patron-view-application-artist-name-profession {
+        margin-left: 108px;
+        margin-top: 7px;
+    }
+
+    .patron-view-application-artist-name {
+        font-size: 29px;
+    }
+
+    .patron-view-application-artist-profession {
+        font-size: 22px;
+    }
+
+    .patron-view-application-artist-details-head {
+        font-size: 14px;
+    }
+
+    .patron-view-application-artist-details {
+        margin-left: 101px;
+        margin-top: 7rem;
+    }
+
+    .patron-view-application-artist-details-body {
+        font-size: 15px;
+    }
+
+    .patron-view-application-footer-container-hire-question {
+        font-weight: 450;
+        font-size: 24px;
+    }
+
+    .patron-view-application-footer-container-hire-ans {
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .patron-view-application-footer-container-contact-artist {
+        font-size: 18px;
+    }
+
+    .patron-view-application-footer-container-contact-artist-previous-experience {
+        font-size: 18px;
+    }
+
+    .patron-view-application-artist-details-arrow {
+        height: 12px;
+        width: 14px;
+    }
+
+    .patron-view-application-footer-container-arrowimg {
+        height: 12px;
+        width: 14px;
+    }
+}
+
+@media (max-width: 280px) {
+    .patron-view-application-body-container {
+        height: 1145px;
+    }
+
+    .vertical-design {
+        height: 1145px;
+    }
+
+}
+
+/* end view applications resume styles */
+
+
+/* start view artist previous experience styles */
+.view-artist-previous-experience {
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+}
+
+.view-artist-previous-experience-artist-card {
+    box-shadow: 0px 0px 3px;
+    margin-bottom: 55px;
+}
+
+.view-artist-previous-experience-heading {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 41px;
+    margin-bottom: 23px;
+}
+
+.view-artist-previous-experience-artist-rating {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 41px;
+    margin-bottom: 23px;
+}
+
+.view-artist-previous-experience-artist-card-work-category {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 41px;
+    margin-bottom: 3px;
+}
+
+.view-artist-previous-experience-artist-card-company-name {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 3px;
+}
+
+/* .view-artist-previous-experience-artist-card-time-duration {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+} */
+
+.view-artist-previous-experience-artist-card-time-duration {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    line-height: 36px;
+    margin-bottom: 3px;
+}
+
+.view-artist-previous-experience-artist-card-time-start-duration-title {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.view-artist-previous-experience-artist-card-time-start-duration-body {
+    font-size: 20px;
+    font-weight: 350;
+    margin-right: 36px;
+}
+
+.view-artist-previous-experience-artist-card-time-end-duration-title {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.view-artist-previous-experience-artist-card-time-end-duration-body {
+    font-size: 20px;
+    font-weight: 350;
+}
+
+.view-artist-previous-experience-artist-card-artist-rating {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 3px;
+}
+
+.view-artist-previous-experience-artist-rating-starImg {
+    width: 18px;
+    height: 18px;
+}
+
+.view-artist-previous-experience-artist-card-artist-review {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    line-height: 36px;
+    margin-bottom: 3px;
+}
+
+.view-artist-previous-experience-artist-card-artist-review-title {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.view-artist-previous-experience-artist-card-artist-review {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.view-artist-previous-experience-artist-card-artist-location {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.view-artist-previous-experience-footer-contact-artist {
+    float: right;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.view-artist-previous-experience-footer-contact-artist a {
+    color: #ed0404;
+    text-decoration: none;
+
+}
+
+.view-artist-previous-experience-footer-arrowimg {
+    height: 16px;
+    width: 16px;
+}
+
+@media (max-width: 479px) {
+    .view-artist-previous-experience-heading {
+        font-size: 25px;
+    }
+
+    .view-artist-previous-experience-artist-rating {
+        font-size: 22px;
+    }
+
+    .view-artist-previous-experience-artist-card-work-category {
+        font-size: 22px;
+    }
+
+    .view-artist-previous-experience-artist-card-company-name {
+        font-size: 20px;
+    }
+
+    .view-artist-previous-experience-artist-card-time-duration {
+        font-size: 20px;
+    }
+
+    .view-artist-previous-experience-artist-card-artist-rating {
+        font-size: 20px;
+    }
+
+    .view-artist-previous-experience-artist-rating-starImg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .view-artist-previous-experience-artist-card-artist-review-title {
+        font-size: 20px;
+    }
+
+    .view-artist-previous-experience-artist-card-artist-review {
+        font-size: 16px;
+    }
+
+    .view-artist-previous-experience-artist-card-artist-location {
+        font-size: 20px;
+    }
+
+    .view-artist-previous-experience-footer-contact-artist {
+        font-size: 18px;
+    }
+
+    .view-artist-previous-experience-footer-arrowimg {
+        height: 12px;
+        width: 14px;
+    }
+}
+
+/* end view artist previous experience styles */
+
+
+/* start previously hired artists styles */
+.view-previously-hired-artists {
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+}
+
+.view-previously-hired-artists-artist-card {
+    box-shadow: 0px 0px 3px;
+    margin-bottom: 55px;
+}
+
+.view-previously-hired-artists-heading {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 41px;
+    margin-bottom: 50px;
+}
+
+.view-previously-hired-artists-artist-rating {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 41px;
+    margin-bottom: 23px;
+}
+
+.view-previously-hired-artists-artist-card-work-category {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 41px;
+    margin-bottom: 3px;
+}
+
+.view-previously-hired-artists-artist-card-company-name {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 3px;
+}
+
+.view-previously-hired-artists-artist-card-time-duration {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    line-height: 36px;
+    margin-bottom: 3px;
+}
+
+.view-previously-hired-artists-artist-card-time-start-duration-title {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.view-previously-hired-artists-artist-card-time-start-duration-body {
+    font-size: 20px;
+    font-weight: 350;
+    margin-right: 36px;
+}
+
+.view-previously-hired-artists-artist-card-time-end-duration-title {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.view-previously-hired-artists-artist-card-time-end-duration-body {
+    font-size: 20px;
+    font-weight: 350;
+}
+
+
+
+.view-previously-hired-artists-artist-card-salaryAndstatus {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 3px;
+}
+
+.view-previously-hired-artists-artist-card-artist-location {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    /* font-weight: 400;
+    font-size: 24px; */
+    line-height: 36px;
+}
+
+.view-previously-hired-artists-artist-card-salary-title {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.view-previously-hired-artists-artist-card-salary-body {
+    font-weight: 350;
+    font-size: 20px;
+    margin-right: 120px;
+}
+
+.view-previously-hired-artists-artist-card-status-title {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.view-previously-hired-artists-artist-card-status-body {
+    font-weight: 350;
+    font-size: 20px;
+}
+
+.view-previously-hired-artists-artist-card-artist-location {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.view-previously-hired-artists-artist-card-rate-artist {
+    float: right;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.view-previously-hired-artists-artist-card-rate-artist a {
+    color: #ed0404;
+    text-decoration: none;
+
+}
+
+.view-previously-hired-artists-footer-arrowimg {
+    height: 16px;
+    width: 16px;
+}
+
+@media (max-width: 479px) {
+    .view-previously-hired-artists-heading {
+        font-size: 25px;
+    }
+
+    .view-previously-hired-artists-artist-rating {
+        font-size: 22px;
+    }
+
+    .view-previously-hired-artists-artist-card-work-category {
+        font-size: 22px;
+    }
+
+    .view-previously-hired-artists-artist-card-company-name {
+        font-size: 20px;
+    }
+
+    .view-previously-hired-artists-artist-card-time-duration {
+        font-size: 20px;
+    }
+
+    /* .view-previously-hired-artists-artist-card-artist-rating {
+        font-size: 20px;
+    } */
+
+    /* .view-previously-hired-artists-artist-rating-starImg {
+        width: 16px;
+        height: 16px;
+    } */
+
+    /* .view-previously-hired-artists-artist-card-artist-review-title {
+        font-size: 20px;
+    }
+
+    .view-previously-hired-artists-artist-card-artist-review {
+        font-size: 16px;
+    } */
+
+    .view-previously-hired-artists-artist-card-artist-location {
+        font-size: 20px;
+    }
+
+    .view-previously-hired-artists-footer-contact-artist {
+        font-size: 18px;
+    }
+
+    .view-previously-hired-artists-footer-arrowimg {
+        height: 12px;
+        width: 14px;
+    }
+}
+
+/* end previously hired artists styles */
+
+
+/* start rate previously hired artists styles */
+.rate-previously-hired-artist {
+    margin-top: 10rem;
+}
+
+.rate-previously-hired-artist-header1 {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 48px;
+}
+
+.rate-previously-hired-artist-header2 {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 48px;
+    margin-bottom: 68px;
+}
+
+.rate-previously-hired-artist-body-artist-rating-text {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+}
+
+.rate-previously-hired-artist-body-artist-feedback-text {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+}
+
+.star-cb-group {
+    /* remove inline-block whitespace */
+    font-size: 0;
+    /* flip the order so we can use the + and ~ combinators */
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    /* the hidden clearer */
+    font-weight: bold;
+    font-size: 38px;
+    margin-left: -92px;
+}
+
+.star-cb-group * {
+    font-size: 1rem;
+}
+
+.star-cb-group>input {
+    display: none;
+}
+
+.star-cb-group>input+label {
+    /* only enough room for the star */
+    display: inline-block;
+    overflow: hidden;
+    text-indent: 9999px;
+    width: 1em;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.star-cb-group>input+label:before {
+    display: inline-block;
+    text-indent: -9999px;
+    content: "☆";
+    color: #888;
+}
+
+.star-cb-group>input:checked~label:before,
+.star-cb-group>input+label:hover~label:before,
+.star-cb-group>input+label:hover:before {
+    content: "★";
+    color: #e52;
+    text-shadow: 0 0 1px #333;
+}
+
+.star-cb-group>.star-cb-clear+label {
+    text-indent: -9999px;
+    width: .5em;
+    margin-left: -.5em;
+}
+
+.star-cb-group>.star-cb-clear+label:before {
+    width: .5em;
+}
+
+.star-cb-group:hover>input+label:before {
+    content: "☆";
+    color: #888;
+    text-shadow: none;
+}
+
+.star-cb-group:hover>input+label:hover~label:before,
+.star-cb-group:hover>input+label:hover:before {
+    content: "★";
+    color: #e52;
+    text-shadow: 0 0 1px #333;
+}
+
+#hired-artist-rating-number {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    margin-left: 135px;
+    margin-top: -9px;
+}
+
+.rate-previously-hired-artist-body-artist-rating-number {
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 1400px) {
+    #hired-artist-rating-number {
+        margin-left: 106px;
+    }
+
+}
+
+@media only screen and (max-width: 1202px) {
+    .star-cb-group {
+        margin-left: -55px;
+    }
+
+    #hired-artist-rating-number {
+        margin-left: 111px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .star-cb-group {
+        margin-left: -8px;
+    }
+
+    #hired-artist-rating-number {
+        margin-left: 119px;
+    }
+
+}
+
+@media only screen and (max-width: 769px) {
+    .star-cb-group {
+        margin-left: 12px;
+    }
+
+    #hired-artist-rating-number {
+        margin-left: 109px;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+
+    .rate-previously-hired-artist-header1 {
+        font-size: 26px;
+    }
+
+    .rate-previously-hired-artist-header2 {
+        font-size: 26px;
+    }
+
+    .rate-previously-hired-artist-body-artist-rating-text {
+        font-size: 25px;
+    }
+
+    .rate-previously-hired-artist-body-artist-feedback-text {
+        font-size: 25px;
+    }
+
+    #hired-artist-rating-number {
+        margin-left: 20px;
+    }
+}
+
+/* end rate previously hired artists styles */
+
+
+/* start view shortlisted artists styles */
+.view-shortlisted-artist {
+    margin-top: 5rem;
+}
+
+.view-shortlisted-artist-header {
+    margin-bottom: 34px;
+    margin-right: 96px;
+}
+
+.view-shortlisted-artist-body-header-left-button {
+    cursor: pointer;
+    color: #ff0606a8;
+}
+
+/* .artist-bookmark {
+    cursor: pointer;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.artist-bookmark a {
+    color: #ed0404;
+    text-decoration: none;
+}
+
+@media (max-width: 450px) {
+
+    .artist-bookmark {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 390px) {
+
+    .artist-bookmark {
+        font-size: 19px;
+    }
+} */
+
+.view-shortlisted-artist-body-footer {
+    margin-top: 10px;
+}
+
+@media (max-width: 484px) {
+
+    .view-shortlisted-artist {
+        margin-top: 8rem;
+    }
+}
+
+@media (max-width: 1192px) {
+
+    .view-shortlisted-artist-header {
+        /* margin-bottom: 34px; */
+        /* margin-right: 0px;
+        margin-left: 13rem; */
+    }
+}
+
+@media (max-width: 1106px) {
+
+    .view-shortlisted-artist-header {
+        /* margin-bottom: 34px; */
+        /* margin-right: 0px;
+        margin-left: 11rem; */
+    }
+}
+
+@media (max-width: 1031px) {
+
+    .view-shortlisted-artist-header {
+        /* margin-bottom: 34px; */
+        /* margin-right: 0px;
+        margin-left: 8rem; */
+    }
+}
+
+@media (max-width: 892px) {
+
+    .view-shortlisted-artist-header {
+        /* margin-bottom: 34px; */
+        /* margin-right: 0px;
+        margin-left: 5rem; */
+    }
+}
+
+@media (max-width: 792px) {
+
+    .view-shortlisted-artist-header {
+        /* margin-bottom: 34px; */
+        /* margin-right: 0px;
+        margin-left: 2rem; */
+    }
+}
+
+@media (max-width: 602px) {
+
+    .view-shortlisted-artist-header {
+        /* margin-bottom: 34px; */
+        margin-right: 0px;
+        margin-left: 0rem;
+    }
+}
+
+@media (max-width: 405px) {
+
+    .patron-view-artist-filter-inputbox {
+        width: 77%;
+    }
+}
+
+/* end view shortlisted artists styles */
+
+
+/* start view contacted artists styles */
+.view-contacted-artist {
+    margin-top: 5rem;
+}
+
+.view-contacted-artist-header {
+    margin-bottom: 34px;
+    margin-right: 96px;
+}
+
+.view-contacted-artist-body-header-left-button {
+    cursor: pointer;
+}
+
+
+.view-contacted-artist-body-footer {
+    margin-top: 10px;
+}
+
+@media (max-width: 484px) {
+
+    .view-contacted-artist {
+        margin-top: 8rem;
+    }
+}
+
+@media (max-width: 1192px) {
+
+    .view-contacted-artist-header {
+        /* margin-bottom: 34px; */
+        /* margin-right: 0px;
+        margin-left: 13rem; */
+    }
+}
+
+@media (max-width: 1106px) {
+
+    .view-contacted-artist-header {
+        /* margin-bottom: 34px; */
+        /* margin-right: 0px;
+        margin-left: 11rem; */
+    }
+}
+
+@media (max-width: 1031px) {
+
+    .view-contacted-artist-header {
+        /* margin-bottom: 34px; */
+        /* margin-right: 0px;
+        margin-left: 8rem; */
+    }
+}
+
+@media (max-width: 892px) {
+
+    .view-contacted-artist-header {
+        /* margin-bottom: 34px; */
+        /* margin-right: 0px;
+        margin-left: 5rem; */
+    }
+}
+
+@media (max-width: 792px) {
+
+    .view-contacted-artist-header {
+        /* margin-bottom: 34px; */
+        /* margin-right: 0px;
+        margin-left: 2rem; */
+    }
+}
+
+@media (max-width: 602px) {
+
+    .view-contacted-artist-header {
+        /* margin-bottom: 34px; */
+        margin-right: 0px;
+        margin-left: 0rem;
+    }
+}
+
+@media (max-width: 405px) {
+
+    .patron-view-artist-filter-inputbox {
+        width: 77%;
+    }
+}
+
+.artist-status {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 36px;
+
+}
+
+.artist-status-hired {
+    font-size: 17px;
+    margin-left: 7px;
+    color: #1fca1c;
+}
+
+.artist-status-in-touch {
+    font-size: 17px;
+    margin-left: 7px;
+    color: #FC9B09;
+}
+
+@media (max-width: 390px) {
+
+    .artist-status {
+        font-size: 20px;
+    }
+}
+
+/* .artist-bookmark {
+    cursor: pointer;
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.artist-bookmark a {
+    color: #ed0404;
+    text-decoration: none;
+}
+
+@media (max-width: 450px) {
+
+    .artist-bookmark {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 390px) {
+
+    .artist-bookmark {
+        font-size: 19px;
+    }
+} */
+/* end view contacted artists styles */

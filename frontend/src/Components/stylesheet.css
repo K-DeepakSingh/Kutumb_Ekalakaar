@@ -1,0 +1,274 @@
+.right-component{
+    right:10px;
+    top:10px;
+    position:fixed;
+}
+.nav_artist{
+    /* top:"0px"; */
+}
+#filter-button{
+    width: fit-content;
+    padding:0px 9px;
+}
+.textone{
+    text-align: center;
+    margin-top: 6rem !important;
+}
+.responsive{
+    width: 50%;
+    margin: auto    ;
+}
+/* .navbar-brand{
+    margin-left: 57px;
+        position:fixed;
+} */
+@media (max-width: 576px) { 
+    
+    .d-flex{
+        width: 100%;
+    }
+    .container form{
+        width: 100% !important ;
+    }
+    .container a{
+        width: 100% !important ;
+ 
+    }
+    .responsive{
+        width: 80%;
+        margin: auto;
+    }
+ }
+ .nav-menu-items{
+z-index: 9;
+top:"60px"
+}
+/* @media only screen and (max-width:770px)
+{
+    .navbar-brand{
+        right: 220px;
+        position: fixed;
+    }
+}
+@media only screen and (max-width:690px)
+{
+    .navbar-brand{
+        right: 190px;
+    }
+}
+@media only screen and (max-width:620px)
+{
+    .navbar-brand{
+        right: 150px;
+    }
+}
+@media only screen and (max-width:545px)
+{
+    .navbar-brand{
+        right: 120px;
+    }
+} */
+@media only screen and (max-width: 466px){
+    .container-fluid{
+        display: flex;
+        /* position: fixed; */
+    }
+    .left-component{
+        position: fixed;
+        /* position: static; */
+    }
+    .right-component{
+        top: 55px;
+        z-index: -1;
+        position: fixed;
+        background-color: white;
+    }
+    .nav-menu-items{
+        z-index: 9;
+        top:"60px";
+        }
+       
+}
+@media only screen and (max-width:580px)
+{
+    #filter-button{margin-left: 30px;
+    width: fit-content;}
+}
+
+/* filter css */
+.filter-popup {
+    --bs-modal-width: 711px;
+}
+
+/* .filter-popup-dialog {} */
+
+.filter-popup-header-text {
+    font-size: 17px;
+}
+
+.filter-text {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.clear-text {
+    margin-left: 30rem;
+    flex: 2 0 auto;
+    cursor: pointer;
+
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.patron-view-artist-filter-InputHeader {
+    font-family: 'Inria Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 38px;
+}
+
+.see-more-text {
+    border: none;
+    color: #d9534f;
+}
+
+@media (max-width: 708px) {
+
+    .clear-text {
+        margin-left: 27rem;
+    }
+}
+
+@media (max-width: 645px) {
+
+    .clear-text {
+        margin-left: 24rem;
+    }
+}
+
+@media (max-width: 616px) {
+
+    .clear-text {
+        margin-left: 22rem;
+    }
+}
+
+@media (max-width: 580px) {
+
+    .clear-text {
+        margin-left: 20rem;
+    }
+}
+
+@media (max-width: 531px) {
+
+    .clear-text {
+        margin-left: 16rem;
+    }
+}
+
+@media (max-width: 505px) {
+
+    .clear-text {
+        margin-left: 12rem;
+    }
+}
+
+@media (max-width: 435px) {
+
+    .clear-text {
+        margin-left: 10rem;
+    }
+}
+
+@media (max-width: 408px) {
+
+    .clear-text {
+        margin-left: 8rem;
+    }
+}
+
+@media (max-width: 371px) {
+
+    .clear-text {
+        margin-left: 6rem;
+    }
+}
+
+@media (max-width: 345px) {
+
+    .clear-text {
+        margin-left: 5rem;
+    }
+}
+
+@media (max-width: 325px) {
+
+    .clear-text {
+        margin-left: 3rem;
+    }
+}
+
+@media (max-width: 325px) {
+
+    .clear-text {
+        margin-left: 1rem;
+    }
+}
+
+/* .patron-view-artist-filter-space-betweeninput-lable-inputbox {
+    width: 26%;
+} */
+/* .patron-view-artist-filter-inputLabelSelect {
+   
+} */
+
+@media (max-width: 405px) {
+
+    .patron-view-artist-filter-inputbox {
+        width: 77%;
+    }
+}
+
+@media (max-width: 554px) {
+
+    .see-more-text {
+        width: 50%;
+    }
+
+}
+/* filter css end */
+
+.btn_hire,.btn_remove , .btn_shortlist{
+    border-radius: 10px;
+    padding:8px 20px;
+    font-size: large;
+    margin-right: 30px;
+    margin-left: 30px;
+    width: fit-content;
+    margin-bottom: 30px;
+}
+.btn_hire{
+    background-color: green;
+}
+
+.btn_shortlist{
+    background-color: rgb(236, 222, 17);
+    padding: 8px 10px;
+}
+.btn_remove{
+    background-color: rgb(205, 2, 2);
+    padding: 8px 10px;
+}
+.btn_hire:hover{
+    background-color: darkgreen;
+}
+.btn_remove:hover{
+    background-color: darkred;
+}
+
